@@ -1,7 +1,30 @@
 import Styles from '@/styles/AboutUs.module.css'
+import Image from 'next/image'
+
 
 const AboutUs = () => {
-    
+    const teams = [
+        {
+            name: "AMV Team",
+            details: "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis nisi imperd"
+        },
+        {
+            name: "Quiz Team",
+            details: "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis nisi imperd"
+        },
+        {
+            name: "WebD Team",
+            details: "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis nisi imperd"
+        },
+        {
+            name: "DNA Team",
+            details: "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis nisi imperd"
+        },
+        {
+            name: "MN Team",
+            details: "Lorem ipsum odor amet, consectetuer adipiscing elit. Odio iaculis primis nisi imperd"
+        }
+    ]
     return (
         <div className={Styles.main}>
             <div className={Styles.left}>
@@ -12,7 +35,18 @@ const AboutUs = () => {
                 <button className={Styles.button}><span className='leftbt'>Meet the Teams</span><span>{'->'}</span></button>
             </div>
             <div className={Styles.right}>
-                
+                {teams.map(team => (
+                    <div className={Styles.card}>
+                        <Image
+                            src="/images/calicon.png"
+                            height={30}
+                            width={30}
+                            alt='team icon'
+                        />
+                        <div className={Styles.cardtitle}>{team["name"]}</div>
+                        <div className={Styles.cardcontent}>{team["details"]}</div>
+                    </div>
+                ))}
             </div>
         </div>
     )

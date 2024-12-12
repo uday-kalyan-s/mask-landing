@@ -23,7 +23,7 @@ const Carousel = ({children, bottom}) => (
         </div>
         <div hidden={!bottom}>
             {Array(5).map((_) => (
-                <span className={Styles.circle}>hi</span>
+                <span className={Styles.circle} key={_}>hi</span>
             ))}
         </div>
     </div>

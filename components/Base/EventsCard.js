@@ -29,7 +29,7 @@ const EventsCard = () => {
                 </div>
                 {
                     eventDetails.map(event => (
-                        <div className={Styles.eventbox}>
+                        <div className={Styles.eventbox} key={event}>
                             <Image
                                 src="/images/calicon.png"
                                 height={40}

@@ -10,6 +10,7 @@ import EventCarousel from "@/components/Base/Carousels/EventCarousel";
 import FanArts from "@/components/Base/FanArts";
 import AmvCarousel from "@/components/Base/Carousels/AmvCarousel";
 import Footer from "@/components/Base/Footer";
+import AboutUs from "@/components/Base/AboutUs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -49,6 +50,7 @@ export default function Home() {
               <AmvCarousel />
             </Carousel>
           </div>
+          <AboutUs />
           <Footer />
         </main>
         </div>

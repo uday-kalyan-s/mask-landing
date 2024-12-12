@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    width: 450px;
+    padding: 40px;
+}
+
+.title1 {
+    font-size: 48px;
+    margin: -20px 0;
+}
+
+.title2 {
+    font-size: 24px;
+    margin: 40px 0;
+}
+
+.bolded {
+    font-weight: 700;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px 40px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.para {
+    margin: 10px 0;
+}

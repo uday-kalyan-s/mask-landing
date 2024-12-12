@@ -17,7 +17,7 @@ const Navbar = () => {
                     alt='mask-logo'
                 />
                 {navItems.map(item => 
-                    <div className={Styles.navItem}>
+                    <div className={Styles.navItem} key={item}>
                         {item}
                     </div>
                 )}

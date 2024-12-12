@@ -36,7 +36,7 @@ const AboutUs = () => {
             </div>
             <div className={Styles.right}>
                 {teams.map(team => (
-                    <div className={Styles.card}>
+                    <div className={Styles.card} key={team}>
                         <Image
                             src="/images/calicon.png"
                             height={30}

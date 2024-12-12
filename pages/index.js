@@ -70,7 +70,7 @@ export default function Home() {
           </div> */}
           <FanArts />
           <div className={styles.amvcarousel}>
-            <Carousel bottom={true} data={amvs} Template={AmvCarousel} />
+            <Carousel bottom={true} data={[{a:"hello"}]} Template={AmvCarousel} />
           </div>
           <AboutUs />
           <Footer />

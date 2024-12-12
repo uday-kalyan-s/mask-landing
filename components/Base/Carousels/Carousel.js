@@ -1,12 +1,16 @@
 import Styles from '@/styles/Carousel.module.css'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import EventCarousel from './EventCarousel'
 import AmvCarousel from './AmvCarousel'
 
-const Carousel = ({bottom, data, Template}) => {
-    console.log(data)
-    const [selected, setSelected] = useState(data)
+function Carousel({bottom, data, Template}) {
+    const [selected, setSelected] = useState(null)
+    console.log("hello")
+    useEffect(() => {
+        console.log("hello")
+    })
+    // setSelected(data[0])
     return (
     <div className={Styles.main}>
         <div className={Styles.upper}>

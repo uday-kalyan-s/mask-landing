@@ -1,32 +1,13 @@
 import Styles from '@/styles/Footer.module.css'
-import Image from 'next/image';
 
-const Navbar = () => {
-    const navItems = [
-        "Home", "Art", "Newsletters", "Events", "Members"
-    ];
+const Footer = () => {
     return (
-        <div className={Styles.navbar}>
-            <div className={Styles.leftContainer}>
-                <Image
-                    src="/images/logo.png"
-                    width={40}
-                    height={40}
-                    style={{borderRadius: '50%'}}
-                    className={Styles.navItem}
-                    alt='mask-logo'
-                />
-                {navItems.map(item => 
-                    <div className={Styles.navItem}>
-                        {item}
-                    </div>
-                )}
-            </div>
-            <div className={Styles.aboutUs}>
-                About Us
-            </div>
-        </div>
+        <footer className={Styles.main}>
+            <span className={Styles.category}><span className={Styles.subcat}>Privacy policy</span><span className={Styles.subcat}>Terms of use</span></span>
+            <span className={Styles.category}>© 2024 Manga and Anime Society Kharagpur. All Rights Reserved. </span>
+            <span className={Styles.category}><span>Privacy policy</span><span>Terms of use</span></span>
+        </footer>
     )
 }
 
-export default Navbar
+export default Footer

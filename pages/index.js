@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Base/Navbar";
@@ -24,6 +23,32 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const events = [
+    {
+      key: 0,
+      name: "Treasure Hunt",
+      url: "/images/hunt.png",
+      content: ["Lorem ipsum odor amet, consectetuer adipiscing elit. Dui volutpat torquent netus est augue. Commodo risus vel adipiscing, est convallis nostra. Class fringilla etiam dis tellus suscipit adipiscing fusce curabitur. Proin pellentesque nascetur consectetur convallis, varius quisque. Fermentum ac libero et maximus primis litora massa orci. Fames auctor maecenas .","Sagittis himenaeos magna parturient himenaeos dictumst ligula. Amet maximus per diam tempor, egestas ullamcorper. Etiam penatibus urna nulla praesent volutpat hac. Morbi"]
+    },
+    {
+      key: 1,
+      name: "OCAQ",
+      url: "/images/hunt.png",
+      content: ["Lorem ipsum odor amet, consectetuer adipiscing elit. Dui volutpat torquent netus est augue. Commodo risus vel adipiscing, est convallis nostra. Class fringilla etiam dis tellus suscipit adipiscing fusce curabitur. Proin pellentesque nascetur consectetur convallis, varius quisque. Fermentum ac libero et maximus primis litora massa orci. Fames auctor maecenas .","Sagittis himenaeos magna parturient himenaeos dictumst ligula. Amet maximus per diam tempor, egestas ullamcorper. Etiam penatibus urna nulla praesent volutpat hac. Morbi"]
+    },
+    {
+      key: 2,
+      name: "Art Competition",
+      url: "/images/hunt.png",
+      content: ["Lorem ipsum odor amet, consectetuer adipiscing elit. Dui volutpat torquent netus est augue. Commodo risus vel adipiscing, est convallis nostra. Class fringilla etiam dis tellus suscipit adipiscing fusce curabitur. Proin pellentesque nascetur consectetur convallis, varius quisque. Fermentum ac libero et maximus primis litora massa orci. Fames auctor maecenas .","Sagittis himenaeos magna parturient himenaeos dictumst ligula. Amet maximus per diam tempor, egestas ullamcorper. Etiam penatibus urna nulla praesent volutpat hac. Morbi"]
+    }
+  ]
+  const amvs = [
+    {
+      key: 0,
+      url: "/images/amv.png"
+    }
+  ]
   return (
     <>
       <Head>
@@ -39,16 +64,13 @@ export default function Home() {
           <Navbar />
           <SocIntro />
           <EventsCard />
-          <div className={styles.carousel}>
-            <Carousel bottom={false}>
-              <EventCarousel />
+          {/* <div className={styles.carousel}>
+            <Carousel bottom={false}  data={events} Template={EventCarousel}>
             </Carousel>
-          </div>
+          </div> */}
           <FanArts />
           <div className={styles.amvcarousel}>
-            <Carousel bottom={true}>
-              <AmvCarousel />
-            </Carousel>
+            <Carousel bottom={true} data={amvs} Template={AmvCarousel} />
           </div>
           <AboutUs />
           <Footer />

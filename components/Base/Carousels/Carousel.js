@@ -1,8 +1,13 @@
 import Styles from '@/styles/Carousel.module.css'
 import Image from 'next/image'
+import { useState } from 'react'
+import EventCarousel from './EventCarousel'
+import AmvCarousel from './AmvCarousel'
 
-
-const Carousel = ({children, bottom}) => (
+const Carousel = ({bottom, data, Template}) => {
+    console.log(data)
+    const [selected, setSelected] = useState(data)
+    return (
     <div className={Styles.main}>
         <div className={Styles.upper}>
             <Image
@@ -11,14 +16,20 @@ const Carousel = ({children, bottom}) => (
                 height={50}
                 alt='left arrow'
                 className={Styles.arrow}
+                onClick={() => setSelected(
+                    data[(selected.key-1)%data.length]
+                )}
             />
-            {children}
+            <Template data={selected}/>
             <Image
                 src='/images/rightarrow.svg'
                 width={50}
                 height={50}
                 alt='right arrow'
                 className={Styles.arrow}
+                onClick={() => setSelected(
+                    data[(selected.key+1)%data.length]
+                )}
             />
         </div>
         <div hidden={!bottom}>
@@ -27,6 +38,6 @@ const Carousel = ({children, bottom}) => (
             ))}
         </div>
     </div>
-)
+)}
 
 export default Carousel

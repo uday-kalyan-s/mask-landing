@@ -1,0 +1,22 @@
+.circle {
+    background-color: rgba(red, green, blue, 0.6);
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+}
+
+.main {
+    display: block;
+    margin: auto;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    background-color: rgba(0,0,0,0.5);
+    margin: 20px;
+}

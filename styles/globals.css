@@ -1,6 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --maskred: #E43332;
+  --darkred: #B02C2B;
+  --darktrans: rgba(0,0,0,0.15);
 }
 
 @media (prefers-color-scheme: dark) {

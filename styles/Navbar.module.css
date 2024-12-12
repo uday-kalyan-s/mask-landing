@@ -1,0 +1,39 @@
+.navItem {
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+.navItem:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--maskred);
+    text-decoration-thickness: 3px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 120px;
+    font-weight: 600;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.leftContainer {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.aboutUs {
+    align-self: flex-end;
+    border-radius: 20px;
+    background-color: var(--maskred);
+    height: 38px;
+    width: 143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

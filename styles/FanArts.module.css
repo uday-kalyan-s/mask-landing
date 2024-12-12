@@ -1,0 +1,82 @@
+.main {
+    width: 100%;
+    padding: 100px;
+    background-color: color-mix(in srgb, var(--maskred) 60%, rgba(0,0,0,0));
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    margin: 20px 5px;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.content {
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+.button {
+    padding: 20px;
+    background-color: black;
+    border: 0;
+    border-radius: 200px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.right {
+    margin: 0;
+}
+
+.fanart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+    width: 600px;
+    background-image: url('/images/fanart.png');
+    background-position: center;
+}
+
+.description {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+}
+
+.leftdesc {
+    width: 50%;
+    margin: 10px;
+}
+
+.desctitle {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: var(--maskred);
+    border-radius: 5px;
+    height: 30px;
+    width: 40%;
+    font-weight: 600;
+    font-size: 15px;
+}
